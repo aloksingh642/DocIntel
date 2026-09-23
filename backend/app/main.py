@@ -48,7 +48,7 @@ def create_app() -> FastAPI:
 
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],  # frontend is served same-origin in prod; widen for dev
+        allow_origins=["https://doc-intel-peach.vercel.app", "http://localhost:5173"],  # frontend is served same-origin in prod; widen for dev
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
