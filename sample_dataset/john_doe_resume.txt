@@ -1,0 +1,13 @@
+John Doe
+john.doe@gmail.com
++91-9876543210
+Varanasi, India
+
+Skills:
+Python, SQL, AWS, Docker, Machine Learning
+
+Experience:
+1.5 years
+
+Education:
+B.Tech Computer Science

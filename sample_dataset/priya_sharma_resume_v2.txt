@@ -1,0 +1,21 @@
+Priya Sharma
+priya.sharma@outlook.com
++91 9812345678
+Bengaluru, India
+
+Professional Summary:
+Full-stack engineer building web products end to end.
+
+Skills:
+JavaScript, TypeScript, React.js, Node JS, MongoDB, Docker, Kubernetes, AWS
+
+Experience:
+4 years of experience
+
+Education:
+B.Tech Information Technology, 2020
+
+Certifications:
+AWS Certified Developer - Associate
+
+Looking for a senior full-stack role.

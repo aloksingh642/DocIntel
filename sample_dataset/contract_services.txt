@@ -1,0 +1,5 @@
+SERVICES AGREEMENT
+This agreement is entered into by and between Alpha Ltd and Beta LLP (the "parties").
+WHEREAS, the parties wish to define the terms and conditions of service;
+NOW THEREFORE the parties agree to indemnify each other.
+Governing Law: India. Termination clause applies after 30 days notice.

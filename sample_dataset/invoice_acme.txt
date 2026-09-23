@@ -1,0 +1,8 @@
+INVOICE
+Invoice Number: INV-2026-1042
+Bill To: Acme Corporation, 5th Avenue, New York
+Subtotal: 2400.00
+Tax: 432.00
+Total Due: 2832.00
+Payment Terms: Net 30
+Amount Due: 2832.00

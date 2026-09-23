@@ -1,0 +1,92 @@
+{
+  "john_doe_resume.txt": {
+    "name": "John Doe",
+    "email": "john.doe@gmail.com",
+    "phone": "+91-9876543210",
+    "location": "Varanasi, India",
+    "skills": [
+      "Python",
+      "SQL",
+      "AWS",
+      "Docker",
+      "Machine Learning"
+    ],
+    "years": 1.5,
+    "degree": "B.Tech",
+    "field": "Computer Science"
+  },
+  "priya_sharma_resume.txt": {
+    "name": "Priya Sharma",
+    "email": "priya.sharma@outlook.com",
+    "phone": "+91 9812345678",
+    "location": "Bengaluru, India",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "AWS"
+    ],
+    "years": 4.0,
+    "degree": "B.Tech",
+    "field": "Information Technology"
+  },
+  "michael_chen_resume.txt": {
+    "name": "Michael Chen",
+    "email": "m.chen@example.com",
+    "phone": "+1-415-555-0132",
+    "location": "San Francisco, USA",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "Microservices",
+      "CI/CD"
+    ],
+    "years": 6.0,
+    "degree": "M.Sc",
+    "field": "Computer Science"
+  },
+  "aisha_khan_resume.txt": {
+    "name": "Aisha Khan",
+    "email": "aisha.khan@gmail.com",
+    "phone": "+91-9988776655",
+    "location": "Hyderabad, India",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "MLOps"
+    ],
+    "years": 3.0,
+    "degree": "M.Tech",
+    "field": "Artificial Intelligence"
+  },
+  "rahul_verma_resume.txt": {
+    "name": "Rahul Verma",
+    "email": "rahul.verma@yahoo.in",
+    "phone": "+91 8877665544",
+    "location": "Delhi, India",
+    "skills": [
+      "Go",
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "GCP",
+      "Linux",
+      "Bash"
+    ],
+    "years": 5.0,
+    "degree": "B.E.",
+    "field": "Electronics"
+  }
+}

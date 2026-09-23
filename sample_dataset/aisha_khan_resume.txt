@@ -1,0 +1,16 @@
+Aisha Khan
+aisha.khan@gmail.com
++91-9988776655
+Hyderabad, India
+
+Skills:
+Python, TensorFlow, PyTorch, NLP, scikit-learn, Pandas, NumPy, MLOps
+
+Experience:
+Machine Learning Engineer, 3 years
+
+Education:
+M.Tech Artificial Intelligence, IIIT Hyderabad, 2022
+
+Certifications:
+Deep Learning Specialization - Coursera

@@ -1,0 +1,17 @@
+Michael Chen
+m.chen@example.com
++1-415-555-0132
+San Francisco, USA
+
+Skills:
+Java, Spring Boot, Postgre SQL, Redis, Kafka, Microservices, CI/CD
+
+Experience:
+Senior Backend Engineer at FinEdge (2021-2024)
+6 years experience
+
+Education:
+M.Sc Computer Science, Stanford University, 2019
+
+Languages:
+English, Mandarin

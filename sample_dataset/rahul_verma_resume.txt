@@ -1,0 +1,13 @@
+Rahul Verma
+rahul.verma@yahoo.in
++91 8877665544
+Delhi, India
+
+Skills:
+Go, Kubernetes, Terraform, AWS, GCP, Linux, Bash, Prometheus monitoring
+
+Experience:
+DevOps Engineer at CloudNine, 5 years
+
+Education:
+B.E. Electronics, 2019

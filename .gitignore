@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# App data & secrets
+backend/idp.db
+backend/uploads/
+.env
+*.local
+
+# Node (frontend/dist is committed on purpose: the backend serves it in
+# production, and Render/docker-compose need it without a Node build step)
+node_modules/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

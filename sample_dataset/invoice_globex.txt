@@ -1,0 +1,8 @@
+INVOICE
+Invoice Number: 88-B
+Bill To: Globex Inc
+Subtotal: 999.99
+Tax: 99.99
+Total Due: 1099.98
+Payment Terms: Due on receipt
+Amount Due: 1099.98

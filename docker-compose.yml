@@ -1,0 +1,69 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: idp
+      POSTGRES_PASSWORD: idp_dev_password
+      POSTGRES_DB: idp
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U idp"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://idp:idp_dev_password@postgres:5432/idp
+      REDIS_URL: redis://redis:6379/0
+      SECRET_KEY: ${SECRET_KEY:-change-me-to-a-long-random-string}
+      AI_PROVIDER: ${AI_PROVIDER:-mock}
+      AI_API_KEY: ${AI_API_KEY:-}
+      UPLOAD_DIR: /app/uploads
+      CLASSIFICATION_CONFIDENCE_THRESHOLD: "0.80"
+      DUPLICATE_SIMILARITY_THRESHOLD: "0.90"
+    volumes:
+      - uploads:/app/uploads
+      - ./frontend/dist:/app/frontend/dist:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # Same image, worker role: Celery command shown for when REDIS-backed
+  # workers are enabled via app.workers (in-process BackgroundTasks are the
+  # zero-dependency default).
+  worker:
+    build: ./backend
+    command: >
+      sh -c "python -m app.workers.celery_worker 2>/dev/null ||
+             echo 'In-process background tasks are active in the API; external worker is optional.'"
+    environment:
+      DATABASE_URL: postgresql://idp:idp_dev_password@postgres:5432/idp
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      - backend
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+  uploads:
